@@ -11,9 +11,9 @@
 		400A0EBE1DA47F9700B67215 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A0EBD1DA47F9700B67215 /* ViewController.swift */; };
 		400A0EC11DA47F9700B67215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400A0EBF1DA47F9700B67215 /* Main.storyboard */; };
 		400A0EC31DA47F9700B67215 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 400A0EC21DA47F9700B67215 /* Assets.xcassets */; };
-		400A0EC61DA47F9700B67215 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 400A0EC41DA47F9700B67215 /* LaunchScreen.storyboard */; };
 		400A0ED11DA47F9700B67215 /* coffee_trackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A0ED01DA47F9700B67215 /* coffee_trackerTests.swift */; };
 		400A0EDC1DA47F9700B67215 /* coffee_trackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400A0EDB1DA47F9700B67215 /* coffee_trackerUITests.swift */; };
+		402F6C581DAACEEB00997914 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 402F6C571DAACEEB00997914 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +38,7 @@
 		400A0EBB1DA47F9700B67215 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		400A0EBD1DA47F9700B67215 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		400A0EC01DA47F9700B67215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		400A0EC21DA47F9700B67215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		400A0EC51DA47F9700B67215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		400A0EC21DA47F9700B67215 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "coffee tracker/Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		400A0EC71DA47F9700B67215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		400A0ECC1DA47F9700B67215 /* coffee trackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coffee trackerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		400A0ED01DA47F9700B67215 /* coffee_trackerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee_trackerTests.swift; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		400A0ED71DA47F9700B67215 /* coffee trackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "coffee trackerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		400A0EDB1DA47F9700B67215 /* coffee_trackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coffee_trackerUITests.swift; sourceTree = "<group>"; };
 		400A0EDD1DA47F9700B67215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		402F6C571DAACEEB00997914 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 				400A0EBB1DA47F9700B67215 /* AppDelegate.swift */,
 				400A0EBD1DA47F9700B67215 /* ViewController.swift */,
 				400A0EBF1DA47F9700B67215 /* Main.storyboard */,
+				402F6C571DAACEEB00997914 /* RatingControl.swift */,
 				400A0EC21DA47F9700B67215 /* Assets.xcassets */,
-				400A0EC41DA47F9700B67215 /* LaunchScreen.storyboard */,
 				400A0EC71DA47F9700B67215 /* Info.plist */,
 			);
 			path = "coffee tracker";
@@ -232,7 +232,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				400A0EC61DA47F9700B67215 /* LaunchScreen.storyboard in Resources */,
 				400A0EC31DA47F9700B67215 /* Assets.xcassets in Resources */,
 				400A0EC11DA47F9700B67215 /* Main.storyboard in Resources */,
 			);
@@ -259,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				402F6C581DAACEEB00997914 /* RatingControl.swift in Sources */,
 				400A0EBE1DA47F9700B67215 /* ViewController.swift in Sources */,
 				400A0EBC1DA47F9700B67215 /* AppDelegate.swift in Sources */,
 			);
@@ -302,14 +302,6 @@
 				400A0EC01DA47F9700B67215 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		400A0EC41DA47F9700B67215 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				400A0EC51DA47F9700B67215 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -503,6 +495,7 @@
 				400A0EE21DA47F9700B67215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		400A0EE31DA47F9700B67215 /* Build configuration list for PBXNativeTarget "coffee trackerTests" */ = {
 			isa = XCConfigurationList;
@@ -511,6 +504,7 @@
 				400A0EE51DA47F9700B67215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		400A0EE61DA47F9700B67215 /* Build configuration list for PBXNativeTarget "coffee trackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +513,7 @@
 				400A0EE81DA47F9700B67215 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
